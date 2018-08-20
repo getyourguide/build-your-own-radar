@@ -3,9 +3,9 @@ FROM node:7.3.0
 
 WORKDIR /app
 ADD ./ /app/
-
 RUN npm install
-RUN PREDEFINED_SHEET_LOCATION=1v1fwXBwcipxGwRPg5Bj3DiSUfm2dVZ8Lm155JKEnltw webpackbbb --prod
+
+RUN PREDEFINED_SHEET_LOCATION=1v1fwXBwcipxGwRPg5Bj3DiSUfm2dVZ8Lm155JKEnltw /app/node_modules/.bin/webpack --prod
 
 
 EXPOSE 3000
