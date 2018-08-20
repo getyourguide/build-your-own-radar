@@ -3,9 +3,4 @@ service:
   name: tech-radar
   owner: devops
   template: node-7
-  containers:
-    web:
-      dockerfile:
-        extra_run:
-          - npm install
-          - PREDEFINED_SHEET_LOCATION=1TfO3ytXBUiAzpHPzFwl1iZwfKRMIaTTo7o-X7RyVo9A /app/node_modules/.bin/webpack --prod
+  dronefile: .drone.yml
