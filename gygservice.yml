@@ -1,7 +1,7 @@
 version: '1'
 service:
   name: tech-radar
-  owner: dentest
+  owner: devops
   template: node-7
   containers:
     web:
