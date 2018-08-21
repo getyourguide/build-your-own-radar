@@ -37,3 +37,12 @@ pipeline:
       - ${DRONE_BUILD_NUMBER}.${DRONE_COMMIT_SHA:0:7}
     when:
       event: push
+  register-dss:
+    image: hub.gyg.io/drone-plugins/dss
+    privileged: true
+    # version needed by the release manager
+    repo: hub.gyg.io/devops/tech-radar
+    tags:
+      - ${DRONE_BUILD_NUMBER}.${DRONE_COMMIT_SHA:0:7}
+    when:
+      event: push
