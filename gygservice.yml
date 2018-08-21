@@ -2,13 +2,8 @@ version: '1'
 service:
   name: tech-radar
   owner: devops
-  #template: node-7
+  template: node-7
   dronefile: .drone.yml
-  containers:
-    web:
-     ports:
-     - container: 3000
-       name: http
 deployments:
   internal:
     image_name: hub.gyg.io/devops/tech-radar-internal
