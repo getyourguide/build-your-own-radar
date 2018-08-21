@@ -12,5 +12,6 @@ service:
 deployments:
   internal:
     image_name: hub.gyg.io/devops/tech-radar-internal
+    ingress: tech-radar.gygadmin.com
   external:
     image_name: hub.gyg.io/devops/tech-radar-external
