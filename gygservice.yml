@@ -7,6 +7,6 @@ service:
 deployments:
   internal:
     image_name: devops/tech-radar-internal
-    ingress: tech-radar.gygadmin.com
+    ingress: techradar.gygadmin.com
   external:
     image_name: devops/tech-radar-external
